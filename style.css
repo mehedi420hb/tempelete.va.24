@@ -4,6 +4,9 @@ body,span,p{
 h1,h2,h3,h4,h5,h6,a{
     font-family: 'Rubik', sans-serif;
 }
+.bg-gray-color{
+    background-color: #F9FAFB;
+}
 a{
     text-decoration: none;
     color: black;
@@ -112,8 +115,8 @@ button.btn.btn-primary:hover::after {
 .slider-sec{
     background: url(https://templates.envytheme.com/finix/default/assets/img/main-banner2.jpg) top center no-repeat;
     background-size: cover;
-    position: fixed;
     
+    background-attachment: fixed;
     
     
     
@@ -167,8 +170,174 @@ button.btn.btn-primary:hover::after {
     font-weight: 400;
 }
 ul{
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 /* headline */
-.headline{}
+.headline{
+    border-bottom: 1px solid #ddd;
+}
+.headline .headline-img{
+    
+}
+.headline .headline-img ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.headline .headline-img ul li{}
+.headline .headline-img ul li a{}
+
+/* about-sec */
+.about-image{
+    position: relative;
+}
+.about-text-img {
+    background: url(https://templates.envytheme.com/finix/default/assets/img/about/shape.png) no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.about-text-img .about-text-iner{
+   
+}
+.about-text-img .about-text-iner h2 {
+    font-size: 64px;
+    color: #f0373a;
+}
+.about-text-img .about-text-iner p {
+    font-size: 17px;
+    font-weight: 500;
+}
+.comon-text h2 {
+    font-size: 37px;
+    font-weight: 400;
+}
+.comon-text h3 {
+    font-size: 18px;
+    color: #f0373a;
+}
+.comon-text p{}
+.comon-text strong {
+    font-size: 19px;
+    font-weight: 400;
+    padding-bottom: 13px;
+    display: block;
+}
+.about-text .comon-text  ul{
+    list-style: none;
+    padding-bottom: 30px;
+
+}
+.about-text .comon-text ul li{
+   
+}
+.about-text .comon-text ul li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    height: 50px;
+    width: 50px;
+    padding: 6px;
+    color: #f0373a;
+}
+.about-text .comon-text ul li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    height: 50px;
+    width: 50px;
+    padding: 6px;
+    color: #f0373a;
+}
+/* fathuers-itmes */
+
+
+.fathuers-itmes{
+   
+}
+.futcher-iner{
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+.futcher-iner:hover{
+    transform: translateY(-15px);
+}.futcher-iner:hover .iner-icon i{
+    color: #fff;
+    
+    background: #f0373a;
+}
+.futcher-iner h3{}
+.futcher-iner p{}
+.iner-icon{}
+.iner-icon i {
+    transition: .5s;
+    color: #f0373a;
+    font-size: 40px;
+    background: #fff;
+    height: 90px;
+    width: 90px;
+    line-height: 92px;
+    border-radius: 50%;
+}
+
+.margin-top30{
+    margin-top: -23px;
+}
+.why-chuse{
+    position: relative;
+}
+a.play-animestion-btn {
+    color: red;
+    font-size: 60px;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    position: relative;
+    position: absolute;
+    bottom: 53px;
+    right: 247px;
+    line-height: 95px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+a.play-animestion-btn::before{
+    background-color: #f0373a;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+    animation: play-bn 1.6s ease-out infinite ;
+}
+@keyframes play-bn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .8;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
